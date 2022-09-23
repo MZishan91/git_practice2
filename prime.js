@@ -1,10 +1,19 @@
-function prime(num){
-  let fact="";
-  for(let i=1;i<=num;i++){
-    if(i%num==0){
+function prime(number){
+  let fact=0;
+  for(let i=1;i<=number;i++){
+    if(number%i==0){
       fact++;
     }
+
   }
-  fact==2 ? console.log(num+"is Prime")
-  : console.log(num+"is Not Prime");
+if(fact==2){
+  return true
+}else{
+
+  return false
 }
+}
+let num=13;
+let ans=prime(num)
+ans==true ? console.log(num+"is Prime")
+: console.log(num+"is Not Prime");
